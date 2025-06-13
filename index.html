@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="calc.css"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calc</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="title">Calc</h1>
+      <div id="calc">
+        <div id="display">
+          <div id="numberDisplay"></div>
+          <div id="showOperation">+</div>
+        </div>
+        <div id="numbers_content">
+          <div class="row_numbers">
+            <div class="dog"></div>
+            <button
+              class="btn ac"
+              onclick="clearDisplay()"
+            >
+              AC
+            </button>
+            <button
+              class="btn del"
+              onclick="delDisplay()"
+            >
+              DEL
+            </button>
+          </div>
+          <div class="row_numbers">
+            <button
+              class="btn seven"
+              onclick="appendNumber('7')"
+            >
+              7
+            </button>
+            <button
+              class="btn eight"
+              onclick="appendNumber('8')"
+            >
+              8
+            </button>
+            <button
+              class="btn nine"
+              onclick="appendNumber('9')"
+            >
+              9
+            </button>
+            <button
+              class="btn nine"
+              onclick="setOperator('divide')"
+            >
+              /
+            </button>
+          </div>
+          <div class="row_numbers">
+            <button
+              class="btn four"
+              onclick="appendNumber('4')"
+            >
+              4
+            </button>
+            <button
+              class="btn five"
+              onclick="appendNumber('5')"
+            >
+              5
+            </button>
+            <button
+              class="btn six"
+              onclick="appendNumber('6')"
+            >
+              6
+            </button>
+            <button
+              class="btn nine"
+              onclick="setOperator('mult')"
+            >
+              x
+            </button>
+          </div>
+          <div class="row_numbers">
+            <button
+              class="btn one"
+              onclick="appendNumber('1')"
+            >
+              1
+            </button>
+            <button
+              class="btn two"
+              onclick="appendNumber('2')"
+            >
+              2
+            </button>
+            <button
+              class="btn three"
+              onclick="appendNumber('3')"
+            >
+              3
+            </button>
+            <button
+              class="btn nine"
+              id="substract"
+              onclick="setOperator('substract')"
+            >
+              -
+            </button>
+          </div>
+          <div class="row_numbers">
+            <button
+              class="btn cero"
+              onclick="appendNumber('0')"
+            >
+              0
+            </button>
+            <button
+              class="btn dot"
+              id="dot"
+            >
+              ,
+            </button>
+            <button
+              id="equal"
+              class="btn"
+              onclick="operate()"
+            >
+              =
+            </button>
+            <button
+              class="btn nine"
+              onclick="setOperator('add')"
+            >
+              +
+            </button>
+          </div>
+        </div>
+        <div id="error"></div>
+      </div>
+    </div>
+    <footer>
+      Github-<a href="https://github.com/AnthonyBAC">AnthonyBAC</a>
+    </footer>
+    <script src="calc.js"></script>
+  </body>
+</html>
