@@ -39,7 +39,7 @@ body {
 
 /* container - calc*/
 #container {
-    max-height: 100vh;
+    height: 100vh;
     max-width: 350px;
     width: 100%;
     display: flex;
