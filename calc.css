@@ -165,7 +165,7 @@ button {
 }
 
 .dog {
-    background-image: url(/dog.png);
+    background-image: url(dog.png);
     width: 100%;
     height: 100%;
     background-size: contain;
