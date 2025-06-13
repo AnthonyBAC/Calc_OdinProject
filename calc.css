@@ -32,7 +32,7 @@ body {
 
     padding: var(--pad);
     background-color: #b0c4de;
-    overflow: hidden;
+
 }
 
 /* container - calc*/
@@ -44,6 +44,8 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
+
 
 
 #title {
@@ -73,7 +75,8 @@ body {
 
     #calc,
     #container {
-        max-width: 100%;
+        width: 100%;
+        height: 100%;
     }
 }
 
