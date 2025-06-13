@@ -29,6 +29,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     padding: var(--pad);
     background-color: #b0c4de;
     overflow: hidden;
@@ -72,6 +73,7 @@ body {
     #calc,
     #container {
         max-width: 100%;
+        height: auto;
     }
 }
 
@@ -202,6 +204,7 @@ a {
     justify-content: start;
     align-items: start;
     font-size: 2rem;
+    overflow: hidden;
 }
 
 #numberDisplay {
@@ -209,6 +212,7 @@ a {
     width: 100%;
     text-align: right;
     border-radius: 1rem;
+    overflow: hidden;
 }
 
 /* error */
