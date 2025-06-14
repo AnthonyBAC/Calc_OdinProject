@@ -39,10 +39,14 @@ body {
 }
 
 @media (max-width: 1024px) {
-    body {
+
+    body,
+    html {
         min-height: auto;
-        height: auto;
+        height: 100%;
         overflow-x: hidden;
+
+
     }
 }
 
@@ -76,6 +80,13 @@ body {
     text-align: left;
 }
 
+@media (max-width: 1024px) {
+    #title {
+        width: auto;
+        max-width: 350px;
+    }
+}
+
 #calc {
     background-color: blanchedalmond;
     padding: var(--pad);
@@ -97,6 +108,7 @@ body {
     #calc {
         height: auto;
         width: auto;
+
         max-height: auto;
     }
 }
