@@ -253,6 +253,7 @@ a {
     text-align: right;
     border-radius: 1rem;
     overflow: hidden;
+    padding-right: 5px;
 }
 
 /* error */
