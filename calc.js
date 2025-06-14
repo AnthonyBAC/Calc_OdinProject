@@ -62,6 +62,10 @@ dot.addEventListener('click', () => {
 
 //
 function setOperator(op) {
+  if (operator !== null && !resetDisplay) {
+    operate();
+  }
+
   firstNumber = parseFloat(numberDisplay.textContent.replace(',', '.'));
   operator = op;
   resetDisplay = true;
